@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta name="robots" content="noindex, nofollow">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>THE GOURMET ARCHIVE | Recipes</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Noto+Serif+TC:wght@300;500;700&display=swap" rel="stylesheet">
+  <!-- ✅ 共用 CSS -->
+  <link rel="stylesheet" href="assets/app.css">
+</head>
+
+<body>
+  <header>
+    <button id="menuToggle" class="menu-toggle" aria-label="Open menu">☰</button>
+    <h1>Enzo Cook~</h1>
+
+    <!-- ✅ 回封面（若你把 cover.html 改名 index.html） -->
+    <a href="./index.html"
+       style="position:absolute; right:16px; top:34px; font-size:.8rem; letter-spacing:2px; color:#9D8461; text-decoration:none;">
+      HOME
+    </a>
+  </header>
+
+  <div class="app-shell">
+    <!-- ✅ 左側選單（改用 data-target，由 app.js 綁定） -->
+    <nav class="side-nav" aria-label="Recipe navigation">
+      <div class="nav-item" data-target="beef-curry">
+        <span class="nav-item-symbol"></span>
+        <span>歐風咖哩</span>
+      </div>
+      <div class="nav-item" data-target="tofu-pasta">
+        <span class="nav-item-symbol"></span>
+        <span>豆腐義大利麵</span>
+      </div>
+      <div class="nav-item" data-target="nikujaga">
+        <span class="nav-item-symbol"></span>
+        <span>日式燉肉</span>
+      </div>
+      <div class="nav-item" data-target="blank">
+        <span class="nav-item-symbol"></span>
+        <span>BLANK</span>
+      </div>
+    </nav>
+
+    <!-- ✅ 右側內容 -->
+    <div id="main-content">
+
+      <!-- ===================== Page: Beef Curry ===================== -->
+      <div id="beef-curry" class="recipe-page">
+        <img src="https://source.unsplash.com/800x600/?gourmet,beef,curry,dark"
+             alt="Smoked Beef Curry"
+             class="recipe-illustration">
+
+        <div class="recipe-header">
+          <h2>煙燻巴沙米克牛肋咖哩</h2>
+        </div>
+
+        <div class="section">
+          <div class="section-title">食 材</div>
+          <ul class="ingredients-grid">
+            <li><span>優選牛肋條 (修筋剪小塊)</span> <span>450g-600g</span></li>
+            <li><span>洋蔥 (0.3cm 極細丁)</span> <span>1 顆</span></li>
+            <li><span>蘑菇 (厚切片)</span> <span>8 朵</span></li>
+            <li><span>蒜泥 / 生薑泥</span> <span>1 大匙 / 1 小匙</span></li>
+            <li><span>煙燻紅椒粉 / 咖哩粉</span> <span>各 1 大匙</span></li>
+            <li><span>巴沙米克醋 (Balsamic)</span> <span>1.5 大匙</span></li>
+            <li><span>澄清雞高湯</span> <span>適量 (蓋過食材)</span></li>
+            <li><span>70% 黑巧克力 / 爪哇咖哩塊</span> <span>2 片 / 1/4 塊</span></li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <div class="section-title">烹飪</div>
+          <ul class="technique-list">
+            <li data-step="I">
+              <strong>美拉德反應</strong>
+              牛肋條稍微修掉筋膜後切成適口小塊。
+              <div>高火熱鍋，不加油，將牛肋條塊每一面煎至極致金黃焦脆。盛出備用，保留鍋內珍貴牛油。</div>
+            </li>
+            <li data-step="II">
+              <strong>蔬菜與菌菇的底蘊</strong>
+              利用原鍋牛油，低火慢炒洋蔥丁直至微透明焦糖化。加入蘑菇煸炒至出水縮小，香氣濃縮。
+            </li>
+            <li data-step="III">
+              <strong>辛香料的綻放</strong>
+              補入少許橄欖油，爆香蒜泥與薑泥。
+              將煎好的牛肋條倒回鍋中，與洋蔥、蘑菇、辛香料充分翻拌。
+            </li>
+            <li data-step="IV">
+              <strong>粉類附著</strong>
+              <div>撒入紅椒粉與咖哩粉，翻炒 30 秒使油脂充分吸收粉末香氣。</div>
+              可以短暫關火或移鍋
+            </li>
+            <li data-step="V">
+              <strong>巴沙米克醋洗鍋</strong>
+              倒醋液。利用酸性刮起鍋底凝結的肉香物質，這是醬汁深度的靈魂來源。
+              <div>第二次（收汁前 5 分鐘）再補「幾滴」巴沙米克</div>
+            </li>
+            <li data-step="VI">
+              <strong>長效慢火燉煮</strong>
+              注入雞高湯。大火煮沸後轉極小火，蓋緊鍋蓋悶煮 60 分鐘。
+              <em>* 於 30 分鐘處檢查水位，若低於食材需酌量補充高湯。</em>
+            </li>
+            <li data-step="VII">
+              <strong>最終熟成與巧克力</strong>
+              熄火，利用餘溫溶入爪哇咖哩塊。重新開火悶煮 10 分鐘進行濃縮收汁。最後拌入黑巧克力，賦予醬汁深邃色澤與醇厚苦甜感。
+            </li>
+          </ul>
+        </div>
+
+        <div class="chef-note">
+          此料理精髓在於「酸度的轉化」。長達一小時的悶煮能將巴沙米克醋的銳利轉為果乾般的甜美。若試味仍覺酸度明顯，可滴入極少許蜂蜜平衡。
+        </div>
+      </div>
+
+      <!-- ===================== Page: Tofu Pasta ===================== -->
+      <div id="tofu-pasta" class="recipe-page">
+        <img src="https://source.unsplash.com/800x600/?fancy,tofu,pasta,fusion"
+             alt="Fusion Tofu Pasta"
+             class="recipe-illustration">
+
+        <div class="recipe-header">
+          <h2>韓式豆腐義大利麵</h2>
+        </div>
+
+        <div class="section">
+          <div class="section-title">食 材</div>
+          <ul class="ingredients-grid">
+            <li><span>板豆腐 (需預先壓重去水 30m)</span> <span>1 塊</span></li>
+            <li><span>義大利麵 (細圓麵為佳)</span> <span>25g (精緻擺盤)</span></li>
+            <li><span>韓式風味醬 (辣醬/醬油/蠔油/糖)</span> <span>各 1 大匙</span></li>
+            <li><span>洋蔥碎 / 蒜泥 (極細化處理)</span> <span>適量</span></li>
+            <li><span>芝麻香油 / 冷壓橄欖油</span> <span>數滴 / 1 大匙</span></li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <div class="section-title">烹飪</div>
+          <ul class="technique-list">
+            <li data-step="I">
+              <strong>豆腐結構工程</strong>
+              板豆腐壓乾水分後，以圓形模具挖空中心，取1/3薄片填補底部。此步驟為承載麵條的關鍵地基。
+            </li>
+            <li data-step="II">
+              <strong>塗抹醬料</strong>
+              醬料組合（每項 1大匙）：辣椒粉、韓式辣醬、醬油、低糖蠔油、寡糖糖漿、橄欖油。
+              <div>將以上調味混合，使用刷子或湯匙，均勻塗抹於豆腐外部與內部凹槽。</div>
+            </li>
+            <li data-step="III">
+              <strong>上火炙烤</strong>
+              豆腐置於上火烤箱 180°C 烘烤 10-12 分鐘，直至表面呈現琥珀焦糖感。
+            </li>
+            <li data-step="IV">
+              <strong>義大利麵</strong>
+              滾水加入 1% 鹽度。麵條提前 2 分鐘出鍋。
+              <div>1. 鍋中加入 1 小匙橄欖油，開中火，放入蒜末與洋蔥碎拌炒至微透明、出香氣。</div>
+              <div>2. 加入剩餘的醬料拌炒數秒。</div>
+              <div>3. 放入煮好的義大利麵，快速翻炒均勻，必要時添加 50ml 麵水調整濃度，讓醬料緊密包覆麵條。</div>
+            </li>
+            <li data-step="V">
+              <strong>立體擺盤與點綴</strong>
+              使用長叉將麵條捲成高聳狀填入豆腐。淋上幾滴芝麻油，撒上蔥綠絲或辣椒絲增加視覺張力。
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ===================== Page: Nikujaga ===================== -->
+      <div id="nikujaga" class="recipe-page">
+        <img src="https://source.unsplash.com/800x600/?japanese,stew,potato,beef"
+             alt="Nikujaga"
+             class="recipe-illustration">
+
+        <div class="recipe-header">
+          <h2>日式馬鈴薯燉肉</h2>
+        </div>
+
+        <div class="section">
+          <div class="section-title">食 材</div>
+          <ul class="ingredients-grid">
+            <li><span>牛五花肉片 (油脂豐富)</span> <span>200g</span></li>
+            <li><span>馬鈴薯 (大塊狀)</span> <span>4 顆</span></li>
+            <li><span>紅蘿蔔 / 洋蔥 (粗切)</span> <span>1 根 / 1 顆</span></li>
+            <li><span>和風醬油 / 清酒 / 味霖</span> <span>3 / 2 / 0.5 大匙</span></li>
+            <li><span>軟水 (適宜長時間燉煮)</span> <span>600ml</span></li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <div class="section-title">烹飪</div>
+          <ul class="technique-list">
+            <li data-step="I">
+              <strong>紅蘿蔔的預處理</strong>
+              將馬鈴薯、紅蘿蔔切成好入口的塊狀，洋蔥順紋切成粗絲。
+              <div>紅蘿蔔塊放入滾水中煮 10 分鐘。這能確保後續與馬鈴薯同煮時，紅蘿蔔也能達到完美的軟度。</div>
+            </li>
+            <li data-step="II">
+              <strong>肉質嫩度控管</strong>
+              鍋中倒入少許油，先炒洋蔥至呈現透明感，放入牛五花肉片，炒到約 7 分熟先撈起備用（這樣肉質才不會因為久燉而變乾柴）。
+            </li>
+            <li data-step="III">
+              <strong>慢火與滲透(時間：15 - 20 分鐘)</strong>
+              將馬鈴薯塊放入鍋中與洋蔥稍加拌炒。
+              <div>倒入 600ml 水、酒、味醂/糖以及和風醬油。</div>
+              <div>蓋上鍋蓋，以中火維持微滾狀態，燉煮至馬鈴薯用筷子可以輕鬆穿透的程度。</div>
+            </li>
+            <li data-step="IV">
+              <strong>最終熟成</strong>
+              確認馬鈴薯鬆軟後回填肉片。<strong>關火悶 10 分鐘</strong>，利用餘溫讓肉片吸飽馬鈴薯澱粉釋出的濃醇湯汁。
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ===================== Page: Blank ===================== -->
+      <div id="blank" class="recipe-page">
+        <img src="https://source.unsplash.com/800x600/?gourmet,beef,curry,dark"
+             alt="blank"
+             class="recipe-illustration">
+
+        <div class="recipe-header">
+          <h2>BLANK</h2>
+        </div>
+
+        <div class="section">
+          <div class="section-title">食 材</div>
+          <ul class="ingredients-grid">
+            <li><span>食材</span> <span>數量</span></li>
+            <li><span>食材</span> <span>數量</span></li>
+            <li><span>食材</span> <span>數量</span></li>
+            <li><span>食材</span> <span>數量</span></li>
+            <li><span>食材</span> <span>數量</span></li>
+            <li><span>食材</span> <span>數量</span></li>
+            <li><span>食材</span> <span>數量</span></li>
+            <li><span>食材</span> <span>數量</span></li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <div class="section-title">烹飪</div>
+          <ul class="technique-list">
+            <li data-step="I"><strong></strong></li>
+            <li data-step="II"><strong></strong></li>
+            <li data-step="III"><strong></strong></li>
+            <li data-step="IV"><strong></strong></li>
+            <li data-step="V"><strong></strong></li>
+            <li data-step="VI"><strong></strong></li>
+            <li data-step="VII"><strong></strong></li>
+          </ul>
+        </div>
+
+        <div class="chef-note">
+          blank
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ✅ 共用 JS（會：綁定 data-target、處理 hash、切頁、手機抽屜） -->
+  <script src="assets/app.js"></script>
+</body>
+</html>

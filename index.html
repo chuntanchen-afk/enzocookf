@@ -1,385 +1,43 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="zh-TW">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2113.65">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; color: #000000; -webkit-text-stroke: #000000}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px}
-    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'PingFang TC'; color: #000000; -webkit-text-stroke: #000000}
-    span.s1 {font-kerning: none}
-    span.s2 {font: 12.0px 'PingFang TC'; font-kerning: none}
-    span.s3 {font: 12.0px Helvetica; font-kerning: none}
-    span.s4 {font: 12.0px 'Zapf Dingbats'; font-kerning: none}
-    span.s5 {font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none}
-    span.s6 {font: 12.0px 'Lucida Grande'; font-kerning: none}
-  </style>
+  <meta name="robots" content="noindex, nofollow">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>THE GOURMET ARCHIVE</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Noto+Serif+TC:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/app.css">
 </head>
+
 <body>
-<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
-<p class="p1"><span class="s1">&lt;html lang="zh-TW"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;head&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta name="robots" content="noindex, nofollow"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;title&gt;THE GOURMET ARCHIVE&lt;/title&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;family=Noto+Serif+TC:wght@300;500;700&amp;display=swap" rel="stylesheet"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;style&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>:root {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>--bg-color: #F8F5F2; /* </span><span class="s2">頂級羊絨色</span><span class="s1"> */</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>--text-main: #1A1A1A; /* </span><span class="s2">深碳黑</span><span class="s1"> */</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>--accent-gold: #9D8461; /* </span><span class="s2">香檳金</span><span class="s1"> */</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>--secondary-text: #666666;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>--card-shadow: 0 10px 30px rgba(0,0,0,0.02);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>--nav-height: 80px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>body {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-family: 'Noto Serif TC', serif;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background-color: var(--bg-color);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: var(--text-main);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin: 0; padding: 0;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display: flex; flex-direction: column; height: 100vh;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>overflow: hidden; /* </span><span class="s2">防止翻頁時出現橫向滾動條</span><span class="s1"> */</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>-webkit-font-smoothing: antialiased;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>perspective: 1000px; /* </span><span class="s2">建立</span><span class="s1"> 3D </span><span class="s2">空間景深</span><span class="s1"> */</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* Header */</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>header {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 30px 20px 20px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>text-align: center;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background-color: var(--bg-color);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border-bottom: 1px solid rgba(0,0,0,0.05);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>z-index: 10;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>header h1 {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-family: 'Playfair Display', serif;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 1.6rem;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>letter-spacing: 4px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin: 0;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-weight: 400;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: var(--accent-gold);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* </span><span class="s2">主內容滾動區</span><span class="s1"> */</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>#main-content {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>flex: 1;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>overflow-y: auto;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>overflow-x: hidden;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>/* padding-bottom </span><span class="s2">預留給導覽列，避免內容被遮擋</span><span class="s1"> */</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding-bottom: calc(var(--nav-height) + 20px);<span class="Apple-converted-space"> </span></span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>scroll-behavior: smooth;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>position: relative;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* </span><span class="s2">食譜頁面容器</span><span class="s1"> */</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.recipe-page {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display: none;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 0 25px 40px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>/* </span><span class="s2">確保翻頁時內容不會溢出容器邊界</span><span class="s1"> */</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>transform-style: preserve-3d;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>backface-visibility: hidden;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* --- </span><span class="s2">核心：</span><span class="s1">3D </span><span class="s2">翻頁動效</span><span class="s1"> --- */</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.recipe-page.active {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display: block;</span></p>
-<p class="p3"><span class="s3"><span class="Apple-converted-space">            </span>/* </span><span class="s1">使用更長的持續時間與貝滑曲線，營造厚重書頁的質感</span><span class="s3"> */</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>animation: bookPageFlipIn 0.9s cubic-bezier(0.25, 1, 0.5, 1) forwards;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>@keyframes bookPageFlipIn {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>0% {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>opacity: 0;</span></p>
-<p class="p3"><span class="s3"><span class="Apple-converted-space">                </span>/* </span><span class="s1">初始狀態：像書頁一樣從右側稍微翹起，帶有旋轉角度</span><span class="s3"> */</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>transform: rotateY(-15deg) translateX(30px) scale(0.98);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>filter: blur(2px);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>100% {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>opacity: 1;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>/* </span><span class="s2">結束狀態：平整放置</span><span class="s1"> */</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>transform: rotateY(0deg) translateX(0) scale(1);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>filter: blur(0);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* --- </span><span class="s2">新增：食譜頂部插畫樣式</span><span class="s1"> --- */</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.recipe-illustration {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>width: 100%;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>height: 260px; /* </span><span class="s2">固定高度確保版面整齊</span><span class="s1"> */</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>object-fit: cover; /* </span><span class="s2">保持圖片比例填滿</span><span class="s1"> */</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border-radius: 2px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin-bottom: 35px;</span></p>
-<p class="p3"><span class="s3"><span class="Apple-converted-space">            </span>/* </span><span class="s1">復古濾鏡：輕微的暖色調與對比度調整，模擬舊照片質感</span><span class="s3"> */</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>filter: sepia(0.15) contrast(0.95) brightness(0.95);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>box-shadow: 0 4px 20px rgba(157, 132, 97, 0.15);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border-bottom: 3px solid rgba(157, 132, 97, 0.3);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background-color: #E0DCD8; /* </span><span class="s2">圖片載入前的佔位色</span><span class="s1"> */</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* </span><span class="s2">食譜標題與標籤</span><span class="s1"> */</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.recipe-header { text-align: center; margin-bottom: 40px; }</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.recipe-header h2 { font-size: 1.6rem; font-weight: 500; margin-bottom: 8px; }</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.recipe-meta { font-size: 0.75rem; color: var(--accent-gold); letter-spacing: 1.5px; }</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* </span><span class="s2">章節板塊</span><span class="s1"> */</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.section { margin-bottom: 35px; }</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.section-title {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-family: 'Playfair Display', serif;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-style: italic;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 1.1rem;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: var(--accent-gold);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border-bottom: 1px solid rgba(157, 132, 97, 0.2);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding-bottom: 8px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin-bottom: 20px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* </span><span class="s2">食材清單樣式</span><span class="s1"> */</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.ingredients-grid {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display: grid; grid-template-columns: 1fr; gap: 12px; padding: 0; list-style: none;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.ingredients-grid li {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 0.95rem; border-bottom: 1px solid rgba(0,0,0,0.03); padding-bottom: 8px; display: flex; justify-content: space-between;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* </span><span class="s2">烹飪工藝細節</span><span class="s1"> */</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.technique-list { padding: 0; list-style: none; }</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.technique-list li {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin-bottom: 25px; position: relative; padding-left: 35px; line-height: 1.8; font-size: 0.95rem;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.technique-list li::before {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>content: attr(data-step); position: absolute; left: 0; top: 0; font-family: 'Playfair Display', serif; font-size: 1.2rem; color: rgba(157, 132, 97, 0.4);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.technique-list strong { color: var(--accent-gold); display: block; margin-bottom: 5px; }</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* </span><span class="s2">廚師筆記</span><span class="s1"> */</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.chef-note {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background-color: #FFF; padding: 20px; border: 1px solid #EEE; font-size: 0.85rem; line-height: 1.6; color: var(--secondary-text); position: relative;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.chef-note::before {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>content: "Chef's Note"; display: block; font-family: 'Playfair Display', serif; font-style: italic; color: var(--accent-gold); margin-bottom: 10px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* </span><span class="s2">底部導覽</span><span class="s1"> */</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>nav {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>position: fixed; bottom: 0; left: 0; right: 0;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>height: var(--nav-height);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background: rgba(255, 255, 255, 0.92);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display: flex; justify-content: space-around; align-items: center;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border-top: 1px solid rgba(157, 132, 97, 0.1);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding-bottom: env(safe-area-inset-bottom);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>z-index: 20;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>box-shadow: 0 -5px 20px rgba(0,0,0,0.02);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.nav-item {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display: flex; flex-direction: column; align-items: center;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: #AAA; text-decoration: none; font-size: 0.65rem; letter-spacing: 1px; transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 10px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.nav-item.active { color: var(--accent-gold); transform: translateY(-2px); }</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.nav-item-symbol { font-size: 1.4rem; margin-bottom: 5px; }</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
-<p class="p1"><span class="s1">&lt;body&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;header&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;h1&gt;Enzo Cook~&lt;/h1&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/header&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;div id="main-content"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div id="beef-curry" class="recipe-page active"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;img src="https://source.unsplash.com/800x600/?gourmet,beef,curry,dark" alt="Smoked Beef Curry" class="recipe-illustration"&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="recipe-header"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h2&gt;</span><span class="s2">煙燻巴沙米克牛肋咖哩</span><span class="s1">&lt;/h2&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="recipe-meta"&gt;RICH • SMOKY • SLOW BRAISED&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="section"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="section-title"&gt;</span><span class="s2">食</span><span class="s1"> </span><span class="s2">材</span><span class="s1">&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;ul class="ingredients-grid"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;span&gt;</span><span class="s2">優選牛肋條</span><span class="s1"> (</span><span class="s2">修筋剪小塊</span><span class="s1">)&lt;/span&gt; &lt;span&gt;450g-600g&lt;/span&gt;&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;span&gt;</span><span class="s2">焦糖洋蔥</span><span class="s1"> (0.3cm </span><span class="s2">極細丁</span><span class="s1">)&lt;/span&gt; &lt;span&gt;1 </span><span class="s2">顆</span><span class="s1">&lt;/span&gt;&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;span&gt;</span><span class="s2">原野蘑菇</span><span class="s1"> (</span><span class="s2">厚切片</span><span class="s1">)&lt;/span&gt; &lt;span&gt;8 </span><span class="s2">朵</span><span class="s1">&lt;/span&gt;&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;span&gt;</span><span class="s2">手磨蒜泥</span><span class="s1"> / </span><span class="s2">生薑泥</span><span class="s1">&lt;/span&gt; &lt;span&gt;1 </span><span class="s2">大匙</span><span class="s1"> / 1 </span><span class="s2">小匙</span><span class="s1">&lt;/span&gt;&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;span&gt;</span><span class="s2">煙燻紅椒粉</span><span class="s1"> / </span><span class="s2">秘製咖哩粉</span><span class="s1">&lt;/span&gt; &lt;span&gt;</span><span class="s2">各</span><span class="s1"> 1 </span><span class="s2">大匙</span><span class="s1">&lt;/span&gt;&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;span&gt;</span><span class="s2">熟成巴沙米克醋</span><span class="s1"> (Balsamic)&lt;/span&gt; &lt;span&gt;1.5 </span><span class="s2">大匙</span><span class="s1">&lt;/span&gt;&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;span&gt;</span><span class="s2">澄清雞高湯</span><span class="s1">&lt;/span&gt; &lt;span&gt;</span><span class="s2">適量</span><span class="s1"> (</span><span class="s2">蓋過食材</span><span class="s1">)&lt;/span&gt;&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;span&gt;70% </span><span class="s2">黑巧克力</span><span class="s1"> / </span><span class="s2">爪哇咖哩塊</span><span class="s1">&lt;/span&gt; &lt;span&gt;2 </span><span class="s2">片</span><span class="s1"> / 1/4 </span><span class="s2">塊</span><span class="s1">&lt;/span&gt;&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/ul&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="section"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="section-title"&gt;</span><span class="s2">烹飪</span><span class="s1">&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;ul class="technique-list"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;li data-step="I"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;strong&gt;</span><span class="s2">美拉德反應</span><span class="s1"> (Maillard Reaction)&lt;/strong&gt;</span></p>
-<p class="p3"><span class="s3"><span class="Apple-converted-space">                    </span></span><span class="s1">高火熱鍋，不加油，將牛肋條塊每一面煎至極致金黃焦脆。盛出備用，保留鍋內珍貴牛油。</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;li data-step="II"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;strong&gt;</span><span class="s2">蔬菜與菌菇的底蘊</span><span class="s1">&lt;/strong&gt;</span></p>
-<p class="p3"><span class="s3"><span class="Apple-converted-space">                    </span></span><span class="s1">利用原鍋牛油，低火慢炒洋蔥丁直至微透明焦糖化。加入蘑菇煸炒至出水縮小，香氣濃縮。</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;li data-step="III"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;strong&gt;</span><span class="s2">辛香料的綻放</span><span class="s1">&lt;/strong&gt;</span></p>
-<p class="p3"><span class="s3"><span class="Apple-converted-space">                    </span></span><span class="s1">補入少許橄欖油，爆香蒜泥與薑泥。撒入紅椒粉與咖哩粉，翻炒</span><span class="s3"> 30 </span><span class="s1">秒使油脂充分吸收粉末香氣。</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;li data-step="IV"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;strong&gt;</span><span class="s2">巴沙米克醋洗鍋</span><span class="s1"> (Deglazing)&lt;/strong&gt;</span></p>
-<p class="p3"><span class="s3"><span class="Apple-converted-space">                    </span></span><span class="s1">倒入牛肉與醋液。利用酸性刮起鍋底凝結的肉香物質（</span><span class="s3">Fond</span><span class="s1">），這是醬汁深度的靈魂來源。</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;li data-step="V"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;strong&gt;</span><span class="s2">長效慢火燉煮</span><span class="s1"> (L'art de Mijoter)&lt;/strong&gt;</span></p>
-<p class="p3"><span class="s3"><span class="Apple-converted-space">                    </span></span><span class="s1">注入雞高湯。大火煮沸後轉極小火，蓋緊鍋蓋悶煮</span><span class="s3"> 60 </span><span class="s1">分鐘。</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;em&gt;* </span><span class="s2">於</span><span class="s1"> 30 </span><span class="s2">分鐘處檢查水位，若低於食材需酌量補充高湯。</span><span class="s1">&lt;/em&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;li data-step="VI"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;strong&gt;</span><span class="s2">最終熟成與巧克力</span><span class="s1">&lt;/strong&gt;</span></p>
-<p class="p3"><span class="s3"><span class="Apple-converted-space">                    </span></span><span class="s1">熄火，利用餘溫溶入爪哇咖哩塊。重新開火悶煮</span><span class="s3"> 10 </span><span class="s1">分鐘進行濃縮收汁。最後拌入黑巧克力，賦予醬汁深邃色澤與醇厚苦甜感。</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/ul&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="chef-note"&gt;</span></p>
-<p class="p3"><span class="s3"><span class="Apple-converted-space">            </span></span><span class="s1">此料理精髓在於「酸度的轉化」。長達一小時的悶煮能將巴沙米克醋的銳利轉為果乾般的甜美。若試味仍覺酸度明顯，可滴入極少許蜂蜜平衡。</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div id="tofu-pasta" class="recipe-page"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;img src="https://source.unsplash.com/800x600/?fancy,tofu,pasta,fusion" alt="Fusion Tofu Pasta" class="recipe-illustration"&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="recipe-header"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h2&gt;</span><span class="s2">韓式豆腐義大利麵</span><span class="s1">&lt;/h2&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="recipe-meta"&gt;FUSION • ARTISAN • TEXTURED&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="section"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="section-title"&gt;</span><span class="s2">食</span><span class="s1"> </span><span class="s2">材</span><span class="s1">&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;ul class="ingredients-grid"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;span&gt;</span><span class="s2">板豆腐</span><span class="s1"> (</span><span class="s2">需預先壓重去水</span><span class="s1"> 30m)&lt;/span&gt; &lt;span&gt;1 </span><span class="s2">塊</span><span class="s1">&lt;/span&gt;&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;span&gt;</span><span class="s2">義大利麵</span><span class="s1"> (</span><span class="s2">細圓麵為佳</span><span class="s1">)&lt;/span&gt; &lt;span&gt;25g (</span><span class="s2">精緻擺盤</span><span class="s1">)&lt;/span&gt;&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;span&gt;</span><span class="s2">韓式風味醬</span><span class="s1"> (</span><span class="s2">辣醬</span><span class="s1">/</span><span class="s2">醬油</span><span class="s1">/</span><span class="s2">蠔油</span><span class="s1">/</span><span class="s2">糖</span><span class="s1">)&lt;/span&gt; &lt;span&gt;</span><span class="s2">各</span><span class="s1"> 1 </span><span class="s2">大匙</span><span class="s1">&lt;/span&gt;&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;span&gt;</span><span class="s2">洋蔥碎</span><span class="s1"> / </span><span class="s2">蒜泥</span><span class="s1"> (</span><span class="s2">極細化處理</span><span class="s1">)&lt;/span&gt; &lt;span&gt;</span><span class="s2">適量</span><span class="s1">&lt;/span&gt;&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;span&gt;</span><span class="s2">芝麻香油</span><span class="s1"> / </span><span class="s2">冷壓橄欖油</span><span class="s1">&lt;/span&gt; &lt;span&gt;</span><span class="s2">數滴</span><span class="s1"> / 1 </span><span class="s2">大匙</span><span class="s1">&lt;/span&gt;&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/ul&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="section"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="section-title"&gt;</span><span class="s2">烹飪</span><span class="s1">&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;ul class="technique-list"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;li data-step="I"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;strong&gt;</span><span class="s2">豆腐盅結構工程</span><span class="s1">&lt;/strong&gt;</span></p>
-<p class="p3"><span class="s3"><span class="Apple-converted-space">                    </span></span><span class="s1">板豆腐壓乾水分後，以圓形模具挖空中心，取薄片填補底部。此步驟為承載麵條的關鍵地基。</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;li data-step="II"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;strong&gt;</span><span class="s2">上火炙烤</span><span class="s1"> (Glazing)&lt;/strong&gt;</span></p>
-<p class="p3"><span class="s3"><span class="Apple-converted-space">                    </span></span><span class="s1">將醬料乳化後均勻塗抹於豆腐內外。置於上火烤箱</span><span class="s3"> 180°C </span><span class="s1">烘烤</span><span class="s3"> 10-12 </span><span class="s1">分鐘，直至表面呈現琥珀焦糖感。</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;li data-step="III"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;strong&gt;</span><span class="s2">義大利麵與醬泥</span><span class="s1">&lt;/strong&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s2">滾水加入</span><span class="s1"> 1% </span><span class="s2">鹽度。麵條提前</span><span class="s1"> 2 </span><span class="s2">分鐘出鍋（</span><span class="s1">Al Dente</span><span class="s2">）。鍋中炒香極細洋蔥與醬汁，加入保留的</span><span class="s1"> 50ml </span><span class="s2">麵水乳化。</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;li data-step="IV"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;strong&gt;</span><span class="s2">立體擺盤與點綴</span><span class="s1">&lt;/strong&gt;</span></p>
-<p class="p3"><span class="s3"><span class="Apple-converted-space">                    </span></span><span class="s1">使用長叉將麵條捲成高聳狀填入豆腐。淋上幾滴芝麻油，撒上蔥綠絲或辣椒絲增加視覺張力。</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/ul&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div id="nikujaga" class="recipe-page"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;img src="https://source.unsplash.com/800x600/?japanese,stew,potato,beef" alt="Nikujaga" class="recipe-illustration"&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="recipe-header"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h2&gt;</span><span class="s2">日式馬鈴薯燉肉</span><span class="s1">&lt;/h2&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="recipe-meta"&gt;TRADITIONAL • UMAMI • COMFORT&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="section"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="section-title"&gt;</span><span class="s2">食</span><span class="s1"> </span><span class="s2">材</span><span class="s1">&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;ul class="ingredients-grid"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;span&gt;</span><span class="s2">牛五花肉片</span><span class="s1"> (</span><span class="s2">油脂豐富</span><span class="s1">)&lt;/span&gt; &lt;span&gt;200g&lt;/span&gt;&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;span&gt;</span><span class="s2">馬鈴薯</span><span class="s1"> (</span><span class="s2">大塊狀</span><span class="s1">)&lt;/span&gt; &lt;span&gt;4 </span><span class="s2">顆</span><span class="s1">&lt;/span&gt;&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;span&gt;</span><span class="s2">紅蘿蔔</span><span class="s1"> / </span><span class="s2">洋蔥</span><span class="s1"> (</span><span class="s2">粗切</span><span class="s1">)&lt;/span&gt; &lt;span&gt;1 </span><span class="s2">根</span><span class="s1"> / 1 </span><span class="s2">顆</span><span class="s1">&lt;/span&gt;&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;span&gt;</span><span class="s2">和風醬油</span><span class="s1"> / </span><span class="s2">清酒</span><span class="s1"> / </span><span class="s2">味霖</span><span class="s1">&lt;/span&gt; &lt;span&gt;3 / 2 / 0.5 </span><span class="s2">大匙</span><span class="s1">&lt;/span&gt;&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;span&gt;</span><span class="s2">軟水</span><span class="s1"> (</span><span class="s2">適宜長時間燉煮</span><span class="s1">)&lt;/span&gt; &lt;span&gt;600ml&lt;/span&gt;&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/ul&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="section"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="section-title"&gt;La Technique / </span><span class="s2">烹飪工藝</span><span class="s1">&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;ul class="technique-list"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;li data-step="I"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;strong&gt;</span><span class="s2">紅蘿蔔的預處理</span><span class="s1">&lt;/strong&gt;</span></p>
-<p class="p3"><span class="s3"><span class="Apple-converted-space">                    </span></span><span class="s1">紅蘿蔔先行入滾水煮</span><span class="s3"> 10 </span><span class="s1">分鐘，軟化堅硬纖維，確保與馬鈴薯同步熟成。</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;li data-step="II"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;strong&gt;</span><span class="s2">肉質嫩度控管</span><span class="s1">&lt;/strong&gt;</span></p>
-<p class="p3"><span class="s3"><span class="Apple-converted-space">                    </span></span><span class="s1">大火炒香洋蔥，加入牛五花片炒至</span><span class="s3"> 7 </span><span class="s1">分熟。隨即撈起肉片，避免長時間燉煮導致蛋白質過度收縮而乾柴。</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;li data-step="III"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;strong&gt;</span><span class="s2">慢火</span><span class="s1"> braise </span><span class="s2">與滲透</span><span class="s1">&lt;/strong&gt;</span></p>
-<p class="p3"><span class="s3"><span class="Apple-converted-space">                    </span></span><span class="s1">加入馬鈴薯塊翻炒，倒入液體調料。中火煮沸後蓋蓋悶煮</span><span class="s3"> 20 </span><span class="s1">分鐘。</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;li data-step="IV"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;strong&gt;</span><span class="s2">最終熟成</span><span class="s1"> (The Resting)&lt;/strong&gt;</span></p>
-<p class="p3"><span class="s3"><span class="Apple-converted-space">                    </span></span><span class="s1">確認馬鈴薯鬆軟後回填肉片。</span><span class="s3">**</span><span class="s1">關火悶</span><span class="s3"> 10 </span><span class="s1">分鐘</span><span class="s3">**</span><span class="s1">，利用餘溫讓肉片吸飽馬鈴薯澱粉釋出的濃醇湯汁。</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/ul&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;nav&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="nav-item active" onclick="switchRecipe('beef-curry', this)"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span class="nav-item-symbol"&gt;</span><span class="s4">✦</span><span class="s1">&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span&gt;</span><span class="s2">歐風咖哩</span><span class="s1">&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="nav-item" onclick="switchRecipe('tofu-pasta', this)"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span class="nav-item-symbol"&gt;</span><span class="s5">◈</span><span class="s1">&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span&gt;</span><span class="s2">豆腐義大利麵</span><span class="s1">&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="nav-item" onclick="switchRecipe('nikujaga', this)"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span class="nav-item-symbol"&gt;</span><span class="s6">◇</span><span class="s1">&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span&gt;</span><span class="s2">日式燉肉</span><span class="s1">&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/nav&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;script&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>function switchRecipe(id, element) {</span></p>
-<p class="p3"><span class="s3"><span class="Apple-converted-space">        </span>// </span><span class="s1">如果點擊的是當前已激活的頁面，則不做任何動作，避免動畫重複觸發</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>if (element.classList.contains('active')) return;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const mainContent = document.getElementById('main-content');</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
-<p class="p3"><span class="s3"><span class="Apple-converted-space">        </span>// 1. </span><span class="s1">先將內容捲回頂部，確保翻頁時從頭開始看</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>mainContent.scrollTop = 0;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p3"><span class="s3"><span class="Apple-converted-space">        </span>// 2. </span><span class="s1">短暫延遲後執行切換，讓捲動完成再翻頁，視覺更流暢</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>setTimeout(() =&gt; {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.querySelectorAll('.recipe-page').forEach(page =&gt; {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>page.classList.remove('active');</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>});</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById(id).classList.add('active');</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.querySelectorAll('.nav-item').forEach(nav =&gt; {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>nav.classList.remove('active');</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>});</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>element.classList.add('active');</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}, 50);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
-<p class="p1"><span class="s1">&lt;/script&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
+  <header>
+    <h1>Enzo Cook~</h1>
+  </header>
+
+  <div class="cover-page" id="cover">
+    <div class="cover-inner">
+      <div class="cover-topline">THE GOURMET ARCHIVE</div>
+
+      <div class="cover-title">ENZO COOK~</div>
+      <div class="cover-sub">Private Kitchen Notes · Curated Recipes</div>
+
+      <div class="cover-seal" aria-hidden="true">
+        <div class="seal-ring">
+          <div class="seal-text">ENZO · PRIVATE KITCHEN · ARCHIVE</div>
+        </div>
+      </div>
+
+      <div class="cover-sign">
+        Signed / Curated by <span>Enzo</span>
+      </div>
+
+      <button id="coverEnter" class="cover-enter" type="button">ENTER KITCHEN</button>
+
+      <div class="cover-foot">Edition · 2026 · Internal Use</div>
+    </div>
+  </div>
+
+  <script src="assets/app.js"></script>
 </body>
 </html>

@@ -1,0 +1,331 @@
+:root {
+  --bg-color: #F8F5F2;
+  --text-main: #1A1A1A;
+  --accent-gold: #9D8461;
+  --secondary-text: #666666;
+  --card-shadow: 0 10px 30px rgba(0,0,0,0.02);
+
+  --side-nav-width: 108px;
+  --side-nav-gap: 16px;
+  --nav-height: 80px;
+}
+
+*{ box-sizing:border-box; }
+
+body {
+  font-family: 'Noto Serif TC', serif;
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+  perspective: 1000px;
+}
+
+header {
+  padding: 30px 20px 20px;
+  text-align: center;
+  background-color: var(--bg-color);
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  z-index: 10;
+  position: relative;
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  letter-spacing: 4px;
+  margin: 0;
+  font-weight: 400;
+  color: var(--accent-gold);
+}
+
+.app-shell{
+  flex: 1;
+  display: flex;
+  min-height: 0;
+}
+
+/* 左側導覽列 */
+nav.side-nav {
+  width: var(--side-nav-width);
+  position: sticky;
+  top: 0;
+  height: 100%;
+  border-right: 1px solid rgba(157, 132, 97, 0.12);
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  padding: 18px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 20;
+  box-shadow: 8px 0 22px rgba(0,0,0,0.02);
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 10px;
+  border-radius: 14px;
+  cursor: pointer;
+  color: #AAA;
+  text-decoration: none;
+  font-size: 0.66rem;
+  letter-spacing: 1px;
+  transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border: 1px solid rgba(157, 132, 97, 0.08);
+  background: rgba(255,255,255,0.55);
+}
+.nav-item:hover {
+  transform: translateX(2px);
+  border-color: rgba(157, 132, 97, 0.22);
+}
+.nav-item.active {
+  color: var(--accent-gold);
+  transform: translateX(3px);
+  border-color: rgba(157, 132, 97, 0.35);
+  background: rgba(157, 132, 97, 0.10);
+  box-shadow: 0 10px 25px rgba(157, 132, 97, 0.10);
+}
+
+.menu-toggle{
+  display:none;
+  position:absolute;
+  left:14px;
+  top:34px;
+  background:none;
+  border:none;
+  font-size:1.4rem;
+  color:var(--accent-gold);
+  cursor:pointer;
+}
+
+/* 右側內容 */
+#main-content {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0 0 40px 0;
+  scroll-behavior: smooth;
+  position: relative;
+  min-width: 0;
+}
+
+/* 頁面 */
+.recipe-page {
+  display: none;
+  padding: 0 25px 40px;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+.recipe-page.active {
+  display: block;
+  animation: bookPageFlipIn 0.9s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+@keyframes bookPageFlipIn {
+  0% { opacity: 0; transform: rotateY(-15deg) translateX(30px) scale(0.98); filter: blur(2px); }
+  100% { opacity: 1; transform: rotateY(0deg) translateX(0) scale(1); filter: blur(0); }
+}
+
+.recipe-illustration {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 2px;
+  margin-bottom: 35px;
+  filter: sepia(0.15) contrast(0.95) brightness(0.95);
+  box-shadow: 0 4px 20px rgba(157, 132, 97, 0.15);
+  border-bottom: 3px solid rgba(157, 132, 97, 0.3);
+  background-color: #E0DCD8;
+}
+
+.recipe-header { text-align: center; margin-bottom: 40px; }
+.recipe-header h2 { font-size: 1.6rem; font-weight: 500; margin-bottom: 8px; }
+
+.section { margin-bottom: 35px; }
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1.1rem;
+  color: var(--accent-gold);
+  border-bottom: 1px solid rgba(157, 132, 97, 0.2);
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+}
+
+.ingredients-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  padding: 0;
+  list-style: none;
+}
+.ingredients-grid li {
+  font-size: 0.95rem;
+  border-bottom: 1px solid rgba(0,0,0,0.03);
+  padding-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+}
+.ingredients-grid li span:last-child { white-space: nowrap; }
+
+.technique-list { padding: 0; list-style: none; }
+.technique-list li {
+  margin-bottom: 25px;
+  position: relative;
+  padding-left: 35px;
+  line-height: 1.8;
+  font-size: 0.95rem;
+}
+.technique-list li::before {
+  content: attr(data-step);
+  position: absolute;
+  left: 0; top: 0;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  color: rgba(157, 132, 97, 0.4);
+}
+.technique-list strong { color: var(--accent-gold); display: block; margin-bottom: 5px; }
+
+.chef-note {
+  background-color: #FFF;
+  padding: 20px;
+  border: 1px solid #EEE;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: var(--secondary-text);
+  position: relative;
+}
+.chef-note::before {
+  content: "Chef's Note";
+  display: block;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  color: var(--accent-gold);
+  margin-bottom: 10px;
+}
+
+/* ===== Cover Page: Chef Notebook + Seal (封面頁專用) ===== */
+.cover-page{
+  display:block; /* cover.html 只顯示封面，不靠 active */
+  padding:0;
+}
+.cover-inner{
+  min-height: calc(100vh - 92px);
+  padding: 44px 26px 34px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  background:
+    radial-gradient(900px 420px at 30% 20%, rgba(157,132,97,.12), transparent 60%),
+    radial-gradient(900px 420px at 70% 70%, rgba(0,0,0,.03), transparent 62%),
+    linear-gradient(180deg, rgba(255,255,255,.55), rgba(248,245,242,1));
+  border-top: 1px solid rgba(0,0,0,0.04);
+}
+.cover-topline{
+  font-family:'Playfair Display', serif;
+  letter-spacing: 6px;
+  font-size: .82rem;
+  color: rgba(157,132,97,.72);
+  margin-bottom: 18px;
+}
+.cover-title{
+  font-family:'Playfair Display', serif;
+  font-size: 2.05rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: var(--accent-gold);
+  margin-bottom: 10px;
+}
+.cover-sub{
+  font-size: .92rem;
+  color: var(--secondary-text);
+  letter-spacing: 1px;
+  margin-bottom: 26px;
+}
+.cover-seal{
+  width: 150px;
+  height: 150px;
+  margin: 6px 0 18px;
+}
+.seal-ring{
+  width: 100%;
+  height: 100%;
+  border-radius: 999px;
+  border: 1px solid rgba(157,132,97,.55);
+  box-shadow:
+    0 18px 36px rgba(157,132,97,0.10),
+    inset 0 0 0 2px rgba(157,132,97,.10);
+  background: rgba(255,255,255,.55);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  transform: rotate(-8deg);
+}
+.seal-text{
+  width: 120px;
+  font-family:'Playfair Display', serif;
+  font-size: .68rem;
+  letter-spacing: 2px;
+  color: rgba(157,132,97,.80);
+  line-height: 1.5;
+}
+.cover-sign{
+  font-family:'Playfair Display', serif;
+  font-style: italic;
+  font-size: .98rem;
+  color: rgba(0,0,0,.72);
+  letter-spacing: .5px;
+  margin: 2px 0 20px;
+}
+.cover-sign span{ color: rgba(157,132,97,.92); }
+
+.cover-enter{
+  border: 1px solid rgba(157,132,97,.38);
+  background: rgba(255,255,255,.72);
+  color: var(--accent-gold);
+  padding: 12px 18px;
+  border-radius: 999px;
+  letter-spacing: 2px;
+  cursor:pointer;
+  transition: transform .22s ease, box-shadow .22s ease, background .22s ease;
+  box-shadow: 0 12px 30px rgba(157,132,97,0.12);
+}
+.cover-enter:hover{
+  transform: translateY(-2px);
+  background: rgba(157,132,97,0.10);
+}
+.cover-foot{
+  margin-top: 20px;
+  font-size: .78rem;
+  color: rgba(0,0,0,.45);
+  letter-spacing: 2px;
+}
+
+/* ===== Mobile drawer ===== */
+@media (max-width: 720px){
+  .menu-toggle{ display:block; }
+
+  nav.side-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 220px;
+    transform: translateX(-100%);
+    transition: transform .35s cubic-bezier(.25,.8,.25,1);
+    z-index: 999;
+  }
+  nav.side-nav.open{ transform: translateX(0); }
+}
